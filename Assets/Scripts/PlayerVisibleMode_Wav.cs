@@ -39,8 +39,8 @@ public class PlayerVisibleMode_Wav : MonoBehaviour
 
     public void UpdateVisibleMode(bool isCliked)
     {
-        float decreaseAmount = 0.3f;
-        float increaseAmountNormal = 0.5f;
+        float decreaseAmount = 0.3f; 
+        //float increaseAmountNormal = 0.5f;
         float increaseAmountTime = 0.3f;
         float activateAmount = 0.3f;
 

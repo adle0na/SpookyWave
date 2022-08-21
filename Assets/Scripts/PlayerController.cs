@@ -99,8 +99,7 @@ public class PlayerController : MonoBehaviour
     private void GameOver()
     {
         float dieTime = Time.time;
-        float playerAlpha;
-        
+
         Instantiate(playerDieEffect, transform.position, Quaternion.identity);
             
         Destroy(GetComponent<Rigidbody2D>());

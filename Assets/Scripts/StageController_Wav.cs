@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using GoogleMobileAds.Api;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
@@ -31,7 +30,7 @@ public class StageController_Wav : MonoBehaviour
     
     public bool        IsGameOver { private set; get; } = false;
     
-    private BannerView bannerView;
+    //private BannerView bannerView;
     private IEnumerator Start()
     {
         bestScore = PlayerPrefs.GetInt("BestScore");
@@ -55,8 +54,10 @@ public class StageController_Wav : MonoBehaviour
         startViewOn.SetActive(true);
         startViewOff.SetActive(false);
         
+        /*
         MobileAds.Initialize(initStatus => { });
         this.RequestBanner();
+        */
     }
     
     public void GameOver()
@@ -98,6 +99,7 @@ public class StageController_Wav : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     
+    /*
     private void RequestBanner()
     {
 #if UNITY_ANDROID
@@ -113,6 +115,5 @@ public class StageController_Wav : MonoBehaviour
 
         this.bannerView.LoadAd(request);
     }
-    
-
+    */
 }
